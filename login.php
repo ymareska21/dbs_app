@@ -4,6 +4,7 @@ if (isset($_SESSION['admin_ID'])) {
   header("Location: index.php");
   exit();
 }
+
 require_once('./classes/database.php');
 $sweetalertConfig = "";
 $con = new database();
